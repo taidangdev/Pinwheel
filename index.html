@@ -1,33 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- FONT: Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- tailwind -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- my css -->
-     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- ------PART 1: START ------- -->
+    <header>
+      <div
+        class="container flex justify-between items-center h-28 my-auto mx-auto text-black w-4/5"
+      >
+        <img
+          src="./images/logo.svg"
+          alt="Đây là logo pinwheel của trang web "
+        />
+        <nav class="h-3/4">
+          <ul class="menu flex justify-between items-center space-x-6 h-full">
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a
+                href="#"
+                class="nav-link-active relative flex h-2/4 items-center transition-all duration-500"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a href="#" class="flex h-2/4 items-center transition-all duration-300 hover:text-orange-600"
+                >About</a
+              >
+            </li>
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a href="#" class="flex h-2/4 items-center transition-all duration-300 hover:text-orange-600"
+                >Blog</a
+              >
+            </li>
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a href="#" class="flex h-2/4 items-center transition-all duration-300 hover:text-orange-600"
+                >Features</a
+              >
+            </li>
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a href="#" class="flex h-2/4 items-center transition-all duration-300 hover:text-orange-600"
+                >How it works</a
+              >
+            </li>
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a href="#" class="flex h-2/4 items-center transition-all duration-300 hover:text-orange-600"
+                >Pages</a
+              >
+            </li>
+            <li class="nav__item ml-8 h-full flex items-center">
+              <a href="#" class="flex h-2/4 items-center transition-all duration-300 hover:text-orange-600"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="btn">Sign up now</button>
+      </div>
+    </header>
 
-</head>
-<body>
-  <!-- ------PART 1: START ------- -->
+    <section class="banner relative">
+      <!-- <img src="./images/banner-shape.svg" alt="ảnh góc mặt trời" class="banner__shape absolute -top-28 right-0" /> -->
+      <div
+        class="container flex justify-between items-center h-96 my-auto mx-auto w-4/5"
+      >
+        <div class="banner__content h-full w-1/2">
+          <h1 class="banner__title text-black text-4xl font-bold mb-6">
+            Scale design & dev operations with Avocode Enterprise
+          </h1>
+          <p class="banner__text mb-6">
+            A fully integrated suite of authentication & authoriz products,
+            Stytch's platform removes the headache of.
+          </p>
+          <button class="btn">Download The Theme</button>
+        </div>
+        <div class="banner__image h-full w-1/2">
+          <img
+            class="h-full w-full object-cover"
+            src="./images/banner-img.png"
+            alt="Hình ảnh minh họa cho banner"
+          />
+        </div>
+      </div>
+    </section>
 
+    <section class="key__features">
+      <div class="container w-4/5 mx-auto">
+        <div class="key__features__title flex justify-between">
+          <h2 class="text-4xl font-bold mb-6 text-black w-2/5">
+            The Highlighting Part Of Our Solution
+          </h2>
+          <p class="text-gray-500 w-2/5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
+            .
+          </p>
+        </div>
+        <div
+          class="key__features__content grid grid-cols-2 gap-7 md:grid-cols-3 xl:grid-cols-4"
+        >
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Smart Reply</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-2.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+          <!-- Card -->
+          <div class="bg-white p-6 shadow-xl rounded-xl">
+            <h3 class="text-xl font-semibold mb-2 text-black">Live Caption</h3>
+            <p class="text-gray-600 text-sm mb-2">
+              Lorem ipsum dolor sit amet consectetur, adipiscing elit.
+            </p>
+            <img
+              src="./images/feature-icon-1.svg"
+              alt="icon tivi"
+              class="mt-4 h-6 w-6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ------PART 1: END------- -->
+    <!-- ------PART 1: END------- -->
 
+    <!-- ------Part 2: START------- -->
 
-  <!-- ------Part 2: START------- -->
+    <!-- ------Part 2: END------- -->
 
+    <!-- ------Part 3: START------- -->
 
-  <!-- ------Part 2: END------- -->
-
-
-  <!-- ------Part 3: START------- -->
-   
-  
-  <!-- ------Part 3: END------- -->
-</body>
+    <!-- ------Part 3: END------- -->
+  </body>
 </html>
