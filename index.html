@@ -240,12 +240,177 @@
 
     <!-- ------PART 1: END------- -->
 
-    <!-- ------Part 2: START------- -->
+
+  <!-- ------Part 2: START------- -->
+  <section class="services mt-7 ">
+    <div class="container ">
+      <div class="conten1  flex items-center ">
+
+        <div class="conten1__left w-1/2">
+          <div class="text  ">
+
+            <h2 class="responsive-text  font-bold">Prevent failure from to <br> impacting your <br> reputation</h2>
+            <p class=" text-xs text-gray-400  mt-4 ">Our platform helps you build secure onboarding <br> authentication
+              experiences that retain and engage <br> your users. We build the infrastructure, you can.</p>
+
+
+            <ul class="mt-4" id="feature-list">
+              <li class="item flex items-center gap-3 p-3 rounded-md cursor-pointer  transition "
+                data-img="https://capstone-tailwind1.vercel.app/images/sells-by-country.png">
+                <img class="mr-1 w-3 h-3" src="https://capstone-tailwind1.vercel.app/images/icons/drop.svg" alt="">
+                Habit building essential choose habit
+              </li>
+
+              <li class="item flex items-center gap-3 p-3 mt-4 mb-4 rounded-md cursor-pointer transition "
+                data-img="https://capstone-tailwind1.vercel.app/images/collaboration.png">
+                <img class="mr-1 w-3 h-3" src="https://capstone-tailwind1.vercel.app/images/icons/brain.svg" alt="">
+                Get an overview of Habit Calendars.
+              </li>
+
+              <li class="item flex items-center gap-3 p-3 rounded-md cursor-pointer  transition "
+                data-img="https://capstone-tailwind1.vercel.app/images/sells-by-country.png">
+                <img class="mr-1 w-3 h-3" src="https://capstone-tailwind1.vercel.app/images/icons/timer.svg" alt="">
+                Start building with Habitify platform
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+
+        <div class="conten1__right w-1/2">
+
+          <div class="img w-full">
+
+            <div class="img__item">
+              <img src="https://capstone-tailwind1.vercel.app/images/sells-by-country.png" alt="">
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="conten2 flex items-center mt-12">
+        <div class="conten2__left w-1/2">
+
+          <div class="img ">
+
+            <div class="img__item">
+              <img class="w-full object-contain" src="https://capstone-tailwind1.vercel.app/images/collaboration.png"
+                alt="">
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="conten2__right w-1/2">
+          <div class="text  ">
+
+            <h2 class="responsive-text font-bold">Accept payments any <br> country in this whole <br> universe</h2>
+            <p class=" text-xs text-gray-400  mt-4 ">Donec sollicitudin molestie malesda. Donec sollitudin molestie
+              malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
+
+            </p>
+            <ul class="mt-4  text-xs">
+              <li class="item flex ">
+                <img class="mr-3" src="https://capstone-tailwind1.vercel.app/images/icons/checkmark-circle.svg" alt="">
+
+                Supporting more than 119 country world
+
+              </li>
+              <li class="item flex mt-4 mb-4 ">
+                <img class="mr-3" src="https://capstone-tailwind1.vercel.app/images/icons/checkmark-circle.svg" alt="">
+
+                Open transaction with more than currencies
+
+              </li>
+              <li class="item flex ">
+                <img class="mr-3" src="https://capstone-tailwind1.vercel.app/images/icons/checkmark-circle.svg" alt="">
+
+                Customer Service with 79 languages
+
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="conten3 flex items-center mt-12 ">
+
+        <div class="conten3__left w-1/2">
+          <div class="text  ">
+
+            <h2 class="responsive-text font-bold">Accountability that <br> works for you</h2>
+            <p class=" text-xs text-gray-400  mt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+              elit. Morbi
+              egestas Werat viverra id et aliquet. vulputate egestas sollicitudin .</p>
+            <button class="btn btn-white mt-6 text-xs">know about us</button>
+
+
+          </div>
+        </div>
+
+        <div class="conten3__right w-1/2">
+
+          <div class="conten__video">
+
+            <div class="video pb-60 pr-12">
+              <div class="video-player absolute left-0 top-0 z-10 h-full w-full">
+                <iframe class="h-full w-full" allowfullscreen=""
+                  src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1"></iframe>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
 
     <!-- ------Part 2: END------- -->
 
-    <!-- ------Part 3: START------- -->
 
-    <!-- ------Part 3: END------- -->
-  </body>
+  <!-- ------Part 3: START------- -->
+
+
+  <!-- ------Part 3: END------- -->
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const items = document.querySelectorAll('#feature-list .item');
+      const imageDisplay = document.querySelector('.img__item img');
+
+      items.forEach(item => {
+        item.addEventListener('click', function () {
+          const newImgSrc = this.getAttribute('data-img');
+          if (newImgSrc) {
+            imageDisplay.src = newImgSrc;
+
+            // (Optional) Highlight active item
+            items.forEach(i => i.classList.remove('bg-orange-300'));
+            this.classList.add('bg-orange-300');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
 </html>
