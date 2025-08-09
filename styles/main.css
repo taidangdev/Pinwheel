@@ -2292,22 +2292,6 @@ input#nav-toggle:checked ~ #nav-menu {
   --tw-text-opacity: 1;
   color: rgb(254 96 25 / var(--tw-text-opacity));
 }
-.btn {
-  display: inline-block;
-  height: 52px;
-  border-width: 1px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  line-height: 36px;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}
 .btn-primary {
   cursor: pointer;
   border-radius: 50px;
