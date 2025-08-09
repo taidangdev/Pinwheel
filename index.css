@@ -157,9 +157,9 @@ body{
 .responsive-text {
   font-size: clamp(14px, 3vw, 38px);
 }
-/* body, p, li {
+.services li {
   font-size: clamp(14px, 2vw, 20px);
-} */
+}
 
 img {
   max-width: 100%;
