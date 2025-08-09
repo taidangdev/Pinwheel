@@ -136,7 +136,6 @@ img {
 }
 
 @media (min-width: 540px) {
-
    .conten1, .conten2, .conten3{
     flex-direction: column;
     gap:10px;
