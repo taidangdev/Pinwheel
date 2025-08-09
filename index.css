@@ -96,58 +96,14 @@ body{
 
 
 
-.item {
+.conten1 .item {
     
    
     opacity: 0.8;
-    margin-right: 150px;
+    margin-right: 190px;
+    
    
 }
-
-
-
-
-
-
-
-/* .btn-white {
-    min-width: 150px;
-    border-radius: 50px;
-    --tw-border-opacity: 1;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity));
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-    text-align: center !important;
-    text-transform: capitalize;
-    --tw-text-opacity: 1;
-    color: rgb(34 34 34 / var(--tw-text-opacity));
-    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: 0px 15px 34px rgba(0, 0, 0, 0.1);
-}
-.btn {
-    display: inline-block;
-    height: 52px;
-    border-width: 1px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    font-size: 10px;
-    line-height: 1.25rem;
-    font-weight: 500;
-    line-height: 36px;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
-    cursor: pointer;
-}
-
-.btn-white:hover {
-    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.05);
-} */
 
 .video {
     position: relative;
@@ -157,7 +113,7 @@ body{
 .responsive-text {
   font-size: clamp(14px, 3vw, 38px);
 }
-.services li {
+.services p, .services li {
   font-size: clamp(14px, 2vw, 20px);
 }
 
@@ -169,7 +125,7 @@ img {
 
 
 
-/* @media (max-width: 540px) {
+ @media (max-width: 540px) {
 
    .conten1, .conten2, .conten3{
     flex-direction: column;
@@ -180,7 +136,6 @@ img {
 }
 
 @media (min-width: 540px) {
-
    .conten1, .conten2, .conten3{
     flex-direction: column;
     gap:10px;
@@ -191,13 +146,13 @@ img {
 
 @media (min-width: 1024px) {
 
-  .container {
+  .services.container {
     max-width: 1024px;
   }
   .conten1, .conten2, .conten3{
     flex-direction: row;
   }
-} */
+} 
 
 
 
